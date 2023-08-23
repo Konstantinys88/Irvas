@@ -24,5 +24,9 @@
     "webpack-stream": "^7.0.0"
   },
   "keywords": [],
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "jquery": "^3.7.0",
+    "slick-carousel": "^1.8.1"
+  }
 }
