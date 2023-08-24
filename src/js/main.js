@@ -4,6 +4,7 @@ import modals from './modules/modals';
 import tabs from './modules/tabs';
 import forms from './modules/forms';
 import changeModalState from './modules/changeModalState';
+import timer from './modules/timer';
 
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -18,10 +19,15 @@ window.addEventListener('DOMContentLoaded', () => {
     tabs('.balcon_icons', '.balcon_icons_img', '.big_img > img', 'do_image_more', 'inline-block');
     forms(modalState);
 
+    const deadline = new Date();
+    deadline.setDate(deadline.getDate() + 5);
+    timer('.container1', deadline)
+ 
+
   
 
 
-})
+});
 
 
 
